@@ -18,27 +18,56 @@
 
     </div>        
     <div id="navbar">
-            <a  src="" class="nav">Home</a>
+            <a  href="#header" class="nav" >Home</a>
             <a class="nav">About</a>
+            <a class="nav" href="#">Services</a>
             <a class="nav">Contact</a>
         </div>
     
     <div id="centerdiv">   
-        <div id="ana_photo">
-        <img id="ana" src="ana.jpg" alt="Founder Ana's photo">
+        <div id="founder1_photo">
+            <img id="founder1" src="founder1.jpg" alt="Founder Ana's photo">
         </div>
         
-        <div id="main_aside_ana">
-            <div id="ana_aside">
-                <h1 id="ana_aside_h1">PK • Legal Service: Global Solutions</h1>   
+        <div id="main_aside_founder1">
+            <div id="founder1_aside">
+                <h1 id="founder1_aside_h1">PK • Legal Service: Global Solutions</h1>   
             </div>
-            <div id="ana_aside_2">
-                <p id="ana_aside_p">Specialized Consulting</p>
+            <div id="founder1_aside_2">
+                <p id="founder1_aside_p">Specialized Consulting</p>
             </div>
         </div>    
     </div>
-    <div id="centerdiv_2"></div>
+
     
+    <div id="centerdiv_2">
+        <div id="main_aside_founder2">
+            <div id="founder2_aside">
+                <h1 id="founder2_aside_h1">PK • Legal Service: Global Solutions</h1>
+            </div>
+            <div id="founder2_aside_2">
+                <p id="founder2_aside_p">Specialized Consulting</p>
+            </div>
+        </div>
+        <div id="founder2">
+            <img id="founder2_photo" src="founder2.jpg" alt="founder2_photo">
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
     
 </body>
 </html>

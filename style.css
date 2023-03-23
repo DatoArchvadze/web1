@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    
 
 }
 #header{
@@ -33,7 +32,8 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    /* position: fixed; */
+    position: sticky;
+    top: 0;
 }
 
 .nav{
@@ -48,7 +48,8 @@ body{
     padding-top:14px ;
     padding-bottom: 10px;
     font-family: 'Plus Jakarta Sans';
-    transition: 2s;
+    transition: 1.2s;
+    text-decoration: none;
 
 }
 
@@ -67,23 +68,24 @@ body{
     font-family: 'Plus Jakarta Sans';
 }
 
-#ana{
+#founder1{
     width: 100%;
     max-width:auto;
+    margin: 0px;
 }
-#ana_aside{
+#founder1_aside{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#ana_aside_2{
+#founder1_aside_2{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-#ana_aside_h1{
-    font-size: 40px;
+#founder1_aside_h1{
+    font-size: 25px;
     font-family: 'Plus Jakarta Sans';
     font-weight: 600;
     color: #000536;
@@ -92,11 +94,40 @@ body{
 
 }
 
-#ana_aside_p{
+#founder1_aside_p{
     font-family: 'Plus Jakarta Sans';
-    font-size: 20px;
+    font-size: 15px;
 
 }
+#founder2{
+    width: 100%;
+
+}
+#founder2_photo{
+    width: 100%;
+}
+#centerdiv_2{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+#main_aside_founder2{
+    order: 3;
+}
+#founder2_aside_h1{
+    font-size: 25px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    color: #000536;
+    line-height: 1.1;
+
+}
+#founder2_aside_p{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+
+}
+
 
 
 
@@ -112,15 +143,19 @@ body{
         border-radius: 100px;
         cursor: pointer;
     }
-    #ana{
+    #founder{
         width: 100%;
     }
-    #ana_aside_2{
+    #founder1_aside_2{
         display: flex;
         justify-content: flex-start;
     }
+    #founder1_aside_h1{
+        font-size: 40px;
 
-    #main_aside_ana{
+    }
+
+    #main_aside_founder1{
         display: flex;
         flex-direction: column;
 
@@ -129,15 +164,57 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 700px;
     }
-    #ana_photo{
+    #founder1_photo{
         /* width: 409px; */
         height: 460.13px;
         /* max-height: 460.13px; */
-        max-width: 40%;
+        width: 50%;
+        max-width: 500px;
+        max-height: 600px;
+    }
+    #founder1_aside_p {
+        font-family: 'Plus Jakarta Sans';
+        font-size: 20px;
+    }
+    #centerdiv_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #founder2{
+        width: 50%;
+        order: 2;
+    }
+    #founder2_photo{
+        max-width: 500px;
+        max-height: 600px;
+    }
+    #founder2_aside{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #founder2_aside_2{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    #main_aside_founder2{
+        width: 50%;
+        order: 1;
+    }
+    #founder2_aside_h1 {
+        font-size: 40px;
+    }
+    #founder2_aside_p{
+        font-family: 'Plus Jakarta Sans';
+        font-size: 20px;
     }
     
-
-
 }
 
