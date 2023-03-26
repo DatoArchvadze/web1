@@ -20,13 +20,13 @@
     <div id="navbar">
             <a  href="#header" class="nav" >Home</a>
             <a class="nav">About</a>
-            <a class="nav" href="#">Services</a>
+            <a class="nav" href="#services">Services</a>
             <a class="nav">Contact</a>
         </div>
     
     <div id="centerdiv">   
         <div id="founder1_photo">
-            <img id="founder1" src="founder1.jpg" alt="Founder Ana's photo">
+            <img id="founder1" src="founder1.jpg" alt="Founder's photo">
         </div>
         
         <div id="main_aside_founder1">
@@ -38,36 +38,66 @@
             </div>
         </div>    
     </div>
-
-    
     <div id="centerdiv_2">
         <div id="main_aside_founder2">
             <div id="founder2_aside">
-                <h1 id="founder2_aside_h1">PK • Legal Service: Global Solutions</h1>
+                <h1 id="founder2_aside_h1">PK • Legal Service: We can help you with your legal issues</h1>
             </div>
             <div id="founder2_aside_2">
                 <p id="founder2_aside_p">Specialized Consulting</p>
             </div>
         </div>
         <div id="founder2">
-            <img id="founder2_photo" src="founder2.jpg" alt="founder2_photo">
+            <img id="founder2_photo" src="founder2.jpg" alt="founder2's photo">
         </div>
 
     </div>
+    <div id="services_div">
+        <h1 id="services"> Services</h1>
+    </div>
+    <div id="services_info">
+        <div class="card">
+            <div class="front">
+                <h2 class="front_h2">Online Consulting</h2>
+                <img src="card_img.jpg" alt="*image" id="front_img">
+                <p class="front_p" >You can get a consultation wherever you want</p>
+                <button class="flip-button" >Learn more</button>
+            </div>
+            <div class="back">
+                <h2 class="back_h2">Back of Card</h2>
+                <p  class="back_p" >Here is some additional information on the back of the card.</p>
+                <button class="flip-button">Back</button>
+            </div>
+        </div>
+    
+
+        <div class="card1">
+            <div class="front">
+                <h2 class="front_h2">Drafting of Agreemets</h2>
+                <img src="agre_img.jpg" alt="*image" id="front_img">
+                <p class="front_p"></p>
+                <button class="flip-button1">Learn more</button>
+            </div>
+            <div class="back">
+                <h2 class="back_h2">Drafting of agreements</h2>
+                <p class="back_p" id="back_p1">including:
+                    <ol style="color: rgb(1, 1, 94); font-weight: 500;">
+                        <li class="li_itms">Purchase contract</li>
+                        <li class="li_itms">Gift contract</li>
+                        <li class="li_itms">Mortgage contract</li>
+                        <li class="li_itms">Pledge agreement</li>
+                        <li class="li_itms">The lease agreement</li>
+                        <li class="li_itms">Loan Agreement</li>
+                        <li class="li_itms">Guarantee agreement</li>
+                        <li class="li_itms">Non-disclosure agreement (NDA)</li>
+                    </ol>
+                <button class="flip-button1">Back</button>
+            </div>
+        </div>
+    </div>
 
 
-
-    <script>
-        const navLinks = document.querySelectorAll('.nav');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    <script src="main.js"></script>
     
 </body>
 </html>
